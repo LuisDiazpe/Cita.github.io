@@ -1,0 +1,86 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.ticket {
+    width: 350px;
+    padding: 30px;
+    border: 2px solid #4CAF50;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    position: relative;
+}
+
+.ticket:before, .ticket:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 15px;
+    left: 0;
+}
+
+.ticket:before {
+    top: -15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.ticket:after {
+    bottom: -15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.ticket-content {
+    padding: 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin-top: 10px;
+}
+
+.ticket h2 {
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+.ticket p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.ticket button {
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 15px; /* Añade margen superior para separar el botón */
+}
+
+.ticket button:hover {
+    background-color: #3e8e41;
+    transform: scale(1.05);
+}
